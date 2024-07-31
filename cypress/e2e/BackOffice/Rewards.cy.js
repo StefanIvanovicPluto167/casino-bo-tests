@@ -11,6 +11,8 @@ describe('Navigate to Rewards', () => {
     cy.xpath('//*[@id=":r0:"]').click()
     cy.xpath('//*[@id="root"]/div[1]/header/div/button').click()
     cy.contains("Rewards").click()
+    cy.contains("New Reward").click()
+    cy.contains("Select Reward type").click()
   })
    
 })
