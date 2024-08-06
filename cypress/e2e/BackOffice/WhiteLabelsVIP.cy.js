@@ -18,7 +18,7 @@ describe('Navigate to White Labels General', () => {
     cy.contains("Edit tier").scrollIntoView()
     cy.xpath('//*[@id="full-width-tabpanel-vipprogress"]/div/div/div/form/div/div[2]/div/div/div[1]/div[1]/div/div').type("Test")
     cy.get('input[type="file"]').attachFile('kyc-picture.png')
-    cy.xpath
+    cy.get('//*[@id=":r12:"]').clear().type("5000")
   })
 
   /*it("Delete VIP", () => {
